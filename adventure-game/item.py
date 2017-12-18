@@ -4,7 +4,7 @@ class Item(object):
     Subclasses for each category might be implemented later."""
 
     def __init__(self, name, description, value, category='general'):
-        """Defined categories so far: general, food"""
+        """Defined categories so far: general, food, weapon"""
         self.name = name
         self.description = description
         self.value = value

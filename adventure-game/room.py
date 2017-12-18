@@ -5,7 +5,7 @@ class Room(object):
     Each wall will either have a door or not. No support for closed/open doors yet
     """
 
-    def __init__(self, name, desc, north=True, east=True, south=True, west=True, contents = []):
+    def __init__(self, name, desc, north=False, east=False, south=False, west=False, contents = []):
         self.name = name
         self.doors = {'north': north, 'south': south, 'east': east, 'west': west}
         self.desc = desc
@@ -48,3 +48,4 @@ if __name__ == '__main__':
     for row in dungeon_map:
         for room in row:
             print(room.name)
+            room.welcome()

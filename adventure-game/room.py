@@ -24,28 +24,4 @@ class Room(object):
 
 if __name__ == '__main__':
 
-    # room_names = [
-    #     ['a', 'b', 'c', 'd', 'e'],
-    #     ['f', 'g', 'h', 'i', 'j'],
-    #     ['k', 'l', 'm', 'n', 'o'],
-    #     ['p', 'q', 'r', 's', 't'],
-    #     ['u', 'v', 'w', 'x', 'y']
-    # ]
-
-    room_names = [
-        ['a', 'b', 'c'],
-        ['d', 'e', 'f'],
-        ['g', 'h', 'i']
-    ]
-
-    dungeon_map = []
-    for x in range(3):
-        row = []
-        for y in range(3):
-            row.append(Room(f"{room_names[x][y]} - {x},{y}", '.'))
-        dungeon_map.append(row)
-
-    for row in dungeon_map:
-        for room in row:
-            print(room.name)
-            room.welcome()
+    print("""Whatever I put in this if statement will run if I'm running this code as the main program, but not if I'm importing it into something else""")
